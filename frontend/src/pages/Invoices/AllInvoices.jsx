@@ -71,15 +71,19 @@ const AllInvoices = ()=> {
 
 const filteredInvoices = useMemo(()=>   {
 return invoices 
-.filter(invoice => statusFilter === 'All' || invoice.status === statusFilter)
-.filter(invoice => 
+.filter((invoice) => statusFilter === 'All' || invoice.status === statusFilter)
+.filter((invoice) => 
   invoice.invoiceNumber.toLowerCase().includes(searchTerm.toLowerCase()) ||
   invoice.billTo.clientName.toLowerCase().includes(searchTerm.toLowerCase())
 );
 }, [invoices, searchTerm, statusFilter]);
 
 if(loading) {
-  return <div className="flex justify-center w-8 h-8 animate-spin text-blue-600 items-center"><Loader2 className="w-8 h-8 animate-spin text-blue-600" /></div>
+  return (
+  <div className="flex justify-center w-8 h-8 animate-spin text-blue-600 items-center">
+  <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
+  </div>
+  );
 }
 
   return (
@@ -159,14 +163,14 @@ if(loading) {
       ) : (
         <div className = "w-[90vw] md:w-auto overflow-x-auto">
           <table className="min-w-full divide-y divide-slate-200">
-            <thead className="bg-slate-500">
+            <thead className="bg-slate-100">
               <tr>
                 <th className = "px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Invoice #</th>
                 <th className = "px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Client</th>
                 <th className = "px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Amount</th>
                 <th className = "px-6 py-3 text-left text-xs font-medium black uppercase tracking-wider">Due Date</th>
                 <th className = "px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Status</th>
-                <th className = "px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Actions</th>
+                <th className = "px-6 py-3 text-middle text-xs font-medium text-black uppercase tracking-wider">Actions</th>
               </tr>
             </thead>
 

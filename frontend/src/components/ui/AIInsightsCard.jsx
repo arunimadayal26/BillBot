@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Lightbulb } from 'lucide-react';
-import axiosInstance from '../utilis/axiosInstance';
-import{ API_PATHS } from '../utilis/apiPaths';
+import axiosInstance from '../../utilis/axiosInstance';
+import{ API_PATHS } from '../../utilis/apiPaths';
 
 const AIInsightsCard = ()=>{
     const [insights, setInsights] = useState([]);

@@ -58,8 +58,8 @@ const CreateInvoice = ({existingInvoice, onSave})=>{
     if(existingInvoice) {
       setFormData({
         ...existingInvoice,
-        invoiceDate:moment(existingInvoice.invoiceDate).format("YYYY-MM-DD"),
-        dueDate:moment(existingInvoice.dueDate).format("YYYY-MM-DD"),
+        invoiceDate: existingInvoice.invoiceDate ? moment(existingInvoice.invoiceDate).format("YYYY-MM-DD"):"",
+        dueDate: existingInvoice.invoiceDate ? moment(existingInvoice.dueDate).format("YYYY-MM-DD") :"",
       });
     } else {
       const generateNewInvoiceNumber = async()=>{

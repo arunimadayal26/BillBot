@@ -106,7 +106,7 @@ exports.updateUserProfile = async(req, res)=>{
 
         if(user){
             user.name = req.body.name || user.name;
-            user.businessNmae = req.body.businessName || user.businessName;
+            user.businessName = req.body.businessName || user.businessName;
             user.address = req.body.address || user.address;
             user.phone = req.body.phone || user.phone;
 

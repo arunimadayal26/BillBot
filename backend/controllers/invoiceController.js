@@ -56,7 +56,7 @@ exports.createInvoice = async(req, res) =>{
 exports.getInvoices = async(req, res)=>{
     
      try{
-        const invoices = await Invoice.find().populate("user", "name email");
+        const invoices = await Invoice.find({user: req.user.id}).populate("user", "name email");
         res.json(invoices);
 
     }catch(error){
@@ -128,6 +128,7 @@ exports.updateInvoice = async(req, res)=>{
                     items,
                     notes,
                     paymentTerms,
+                    status,
                     subtotal,
                     taxTotal,
                     total,

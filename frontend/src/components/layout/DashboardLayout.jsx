@@ -87,7 +87,7 @@ return (
     <div className="flex h-screen bg-gray-50">
       {/*sidebar*/}
       <div 
-      className={`fixed insert-y-0 left-0 z-50 flex flex-col transition duration-300 transform ${
+      className={`fixed inset-y-0 left-0 z-50 flex flex-col transition duration-300 transform ${
         isMobile
         ? sidebarOpen
         ? "translate-x-0"
@@ -111,7 +111,7 @@ return (
         </div>
        
        {/*Navigation*/}
-       <nav className="px-4 py-4 space-y-2">
+       <nav className="flex-1 px-4 py-4 space-y-2">
          {NAVIGATION_MENU.map((item)=> (
           <NavigationItem 
           key={item.id}
@@ -123,7 +123,7 @@ return (
         </nav>
        
      {/*logout*/}
-     <div className="absolute bottom-4 left-4 right-4">
+     <div className="p-4">
       <button 
       className="w-full flex items-center px-3 py-2.5 text-sm font-semibold rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-all duration-200"
       onClick ={logout} >
