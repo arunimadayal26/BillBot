@@ -67,7 +67,7 @@ const ProfilePage =()=> {
         <div className="p-6 space-y-6">
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
-            <div className="realtive">
+            <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <Mail className="w-5 h-5 text-slate-400"/>
               </div>

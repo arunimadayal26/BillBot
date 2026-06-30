@@ -58,20 +58,20 @@ export const FAQS=[
         answer:"Simply post any text that contains invoice details - like an email, a list of items, or a work summary - and our AI will instantly parse it to pre-fill a new inoice for you, saving your time and effort "
     },
     {
-        question:"How does the AI invoice creation work",
-        answer:"Simply post any text that contains invoice details - like an email, a list of items, or a work summary - and our AI will instantly parse it to pre-fill a new inoice for you, saving your time and effort "
+        question:"Can I edit an invoice after it's generated?",
+        answer:"Yes, you can edit any invoice before downloading or sending it "
     },
     {
-        question:"How does the AI invoice creation work",
-        answer:"Simply post any text that contains invoice details - like an email, a list of items, or a work summary - and our AI will instantly parse it to pre-fill a new inoice for you, saving your time and effort "
+        question:"Can I download invoices as PDF?",
+        answer:"Yes, you can download and share your invoices in PDF format instantly "
     },
     {
-        question:"How does the AI invoice creation work",
-        answer:"Simply post any text that contains invoice details - like an email, a list of items, or a work summary - and our AI will instantly parse it to pre-fill a new inoice for you, saving your time and effort "
+        question:"Can other info be added to an invoice?",
+        answer:"Yes, you can customize invoices with notes, taxes, dicounts, and payement details"
     },
     {
-        question:"How does the AI invoice creation work",
-        answer:"Simply post any text that contains invoice details - like an email, a list of items, or a work summary - and our AI will instantly parse it to pre-fill a new inoice for you, saving your time and effort "
+        question:"How do I change my account email?",
+        answer:"You can update your email anytime from your account profile"
     }
 ];
 
